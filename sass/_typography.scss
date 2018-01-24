@@ -1,0 +1,46 @@
+@import "variables";
+
+.heading-primary{
+   
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $color-black-1;
+    padding: 2px 0 2px 0;
+    margin-bottom: 2rem;
+    background-color: $color-yellow-1;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .12); 
+    margin-bottom: 4rem;
+
+    &:hover {
+      
+        color: $color-yellow-1;
+        background-color: $color-black-1;
+    }
+}
+
+
+
+.paragraph{
+    font-size: 1.6rem;
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+    text-align: justify;
+}
+h2{
+    display: block;
+    font-size: 7rem;
+    text-align: center;
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+}
+
+.text-contact{
+    font-size: 2rem;
+    padding: 3rem 4rem;
+    text-align: center;
+}
+

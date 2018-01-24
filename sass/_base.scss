@@ -1,0 +1,28 @@
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size:  62.5%; // 1rem = 10px, 10px/16px = 62.5%
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    line-height: 1.6;
+    font-weight: 300;
+    color: $color-black-2;
+}
+
+::selection {
+    background-color: $color-yellow-1;
+    color: $color-white;
+}

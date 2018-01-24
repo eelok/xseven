@@ -1,0 +1,47 @@
+@import "variables";
+
+.header {
+    width: 100%;
+    margin: 0 auto 4rem auto;
+    background-color: #fadb4a; //test
+    height: 10rem;
+
+
+  
+
+
+    &__box-logo {
+        position: relative;
+        transform: all;
+    }
+
+
+
+    &__tree {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 50;
+        transform: translateY(-310px) translateX(-455px) scale(.28);
+    }
+
+    &__name{
+
+        cursor: pointer;
+        // width: 70rem;
+        // height: 50rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateY(-13px) translateX(5px) scale(.6);
+        // z-index: 50;
+        
+
+    }
+
+
+
+
+  
+}
