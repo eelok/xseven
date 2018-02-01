@@ -1,15 +1,10 @@
 @import "variables";
+@import "utilities";
 
 .container{
     height: 100vh;
-    margin: 0 auto;
-    background-color: $color-white; 
     max-width: 100rem;
-}
-
-
-.main-part{
-    display: flex;
-    flex-direction: row;
+    margin: 4rem auto 0;
+    background-color: $color-white; 
 }
 
