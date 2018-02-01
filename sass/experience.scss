@@ -1,0 +1,65 @@
+.experience {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+ 
+    &__app-list {
+        display: flex;
+        flex: 0 0 50%; 
+        list-style: none;
+        flex-direction: column;
+        justify-content: space-between;
+        color: $color-black-1; 
+    }
+    &__app-item {
+        &:not(:last-child){
+            margin-bottom: 1.3rem;
+        }
+    }
+
+    &__level-box {
+        flex: 0 0 50%;
+    }
+    
+    &__progressbar {
+        background-color:  $color-grey-dark-3;
+        border-radius: 2px;
+        padding: 1px;
+        height: 3rem;
+        width: 100%;
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+
+        &::before{
+            content: "";
+            display: block;
+            background-color: $color-blue-2;
+            border-radius: 2px;
+            height: 100%; 
+        }
+        &--1::before{
+            width: 75%;
+        }
+        &--2::before{
+            width: 70%;
+        }
+        &--3::before{
+            width: 69%;
+        }
+        &--4::before{
+            width: 55%;
+        }
+        &--5::before{
+            width: 40%;
+        }
+        &--6::before{
+            width: 31%;
+        }
+        &--7::before{
+            width: 31%;
+        }
+    }
+}
