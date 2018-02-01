@@ -1,8 +1,6 @@
 @import "variables";
 @import "utilities";
 
-
-
 .heading-primary{
     font-size: 3rem;
     text-align: center;
@@ -14,12 +12,10 @@
     background-color: $color-yellow-1;
     text-shadow: 0 2px 2px rgba(0, 0, 0, .12); 
 
-    &:hover {
-        color: $color-yellow-1;
-        background-color: $color-black-1;
+    &__experience{
+        background-color: $color-blue-2;
     }
 }
-
 
 .paragraph {
     font-size: 1.6rem;
