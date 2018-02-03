@@ -1,6 +1,13 @@
 @import "variables";
 @import "utilities";
  
+.container{
+    height: 100vh;
+    max-width: 100rem;
+    margin: 6rem auto 0;
+    background-color: $color-white; 
+}
+
 .main-part{
     display: flex;
 }
@@ -8,7 +15,6 @@
 .text-box{
     flex: 1 0 50%;
     background-color: $color-white; 
-    // border-bottom:  1px solid $color-grey-light-2;
 }
    
 .gallery {
