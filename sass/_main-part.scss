@@ -1,7 +1,6 @@
 @import "variables";
 @import "utilities";
  
-
 .main-part{
     display: flex;
 }
@@ -27,10 +26,6 @@
         height: 15rem; 
         transition: all .3s ease-in-out;
         outline: 2px solid $color-yellow-1;
-
-        &__experience{
-            outline: 2px solid $color-blue-2;
-        }
 
         &:hover {
             outline-offset: 0;
