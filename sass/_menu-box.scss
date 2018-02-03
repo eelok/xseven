@@ -35,7 +35,7 @@
             width: 100%; 
         }
 
-        &-active {
+        &--active {
             background-color: $color-yellow-1;
         }
 
@@ -44,12 +44,6 @@
             &-active {
                 background-color: $color-blue-2; 
             }  
-        }
-        &--contact {
-            &::before,
-            &--active {
-                background-color: $color-green-3;
-            }
         }
     }
     &__link:link,
