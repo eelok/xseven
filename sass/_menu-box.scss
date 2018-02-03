@@ -45,6 +45,12 @@
                 background-color: $color-blue-2; 
             }  
         }
+        &--contact {
+            &::before,
+            &--active {
+                background-color: $color-green-3;
+            }
+        }
     }
     &__link:link,
     &__link:visited {
