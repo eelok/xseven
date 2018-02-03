@@ -38,13 +38,7 @@
         &--active {
             background-color: $color-yellow-1;
         }
-
-        &--blau {
-            &::before,
-            &-active {
-                background-color: $color-blue-2; 
-            }  
-        }
+        
     }
     &__link:link,
     &__link:visited {
