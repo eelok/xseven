@@ -69,26 +69,66 @@
     // }
 }
 .progress-bar {
+    position: relative;
     &:not(:last-child ) {
         margin-bottom: 1.7rem;
     }
-    // display: block;
     width: 100%;
     height: 3rem;
     background-color: $color-grey-light-1;
     border-radius: 2px;
     box-shadow: 0 1px 1px rgba(black, .1);
-    // border: 1px solid $color-grey-dark;
-
-   background-image: linear-gradient(90deg, blue, blue 70%, red 65%);
 
    &::before {
        content: "";
        display: block;
-       background-color: aqua;
        height: 100%;
-       width: 10rem;
-       border-radius: 2px;
+       border-top-left-radius: 2px;
+       border-bottom-left-radius: 2px;
+       background-color: rgba($color-blue-7, .6);
    }
+   &__html {
+       background-image: linear-gradient(90deg, $color-blue-4 75%, rgba(25, 25, 25, .2) 75%);
+       &::before {
+            width: 6.5rem;
+       }
+   }
+   &__css {
+        background-image: linear-gradient(90deg, $color-blue-4 75%, rgba(25, 25, 25, .2) 75%);
+        &::before {
+            width: 4.9rem;
+        }
+    }
+    &__sass {
+        background-image: linear-gradient(90deg, $color-blue-4 73%, rgba(25, 25, 25, .2) 73%);
+        &::before {
+            width: 10rem;
+        }
+    }
 
+    &__git {
+        background-image: linear-gradient(90deg, $color-blue-4 60%, rgba(25, 25, 25, .2) 60%);
+        &::before {
+            width: 4.9rem;
+        }
+    }
+    &__npm {
+        background-image: linear-gradient(90deg, $color-blue-4 50%, rgba(25, 25, 25, .2) 50%);
+        &::before {
+            width: 5.5rem;
+        }
+    }
+    &__phshop {
+        background-image: linear-gradient(90deg, $color-blue-4 46%, rgba(25, 25, 25, .2) 46%);
+        &::before {
+            width: 11.5rem;
+        }
+    }
+  
+    &__illustrator {
+        background-image: linear-gradient(90deg, $color-blue-4 45%, rgba(25, 25, 25, .2) 45%);
+        &::before {
+            width: 12.5rem;
+        }
+    }
 }
