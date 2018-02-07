@@ -1,0 +1,62 @@
+@import "variables";
+@import "utilities";
+
+.form {
+    background-color: red;
+    
+    &__group {
+        display: flex;
+        justify-content: flex-end;
+        &:not(:last-child)  {
+             margin-bottom: 2.3rem;   
+        }
+
+    }
+
+    &__body {
+        
+    }
+
+    &__label {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    &__input,
+    &__textarea  {
+        font-size: 1.5rem;
+        font-family: inherit;
+        width: 50%;
+        border-radius: 2px;
+        border: none;
+        padding: 1rem 1.5rem;
+        border-bottom: 2px solid transparent;
+        background-color: rgba($color-blue-4, .8);
+        
+        &::placeholder {
+            // color: $color-grey-dark;
+        }
+
+        &:focus {
+            border-bottom: 2px solid $color-yellow-1;
+            outline: none;
+        }
+
+    }
+
+    &__textarea {
+        height: 10rem;
+    }
+    
+}
+
+.btn {
+    width: 50%;
+    padding: 1rem 5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: $color-blue-8;
+    font-family: inherit;
+    border-radius: 2px;
+    outline: none;
+}
