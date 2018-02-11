@@ -1,0 +1,93 @@
+@import "variables";
+@import "utilities";
+
+.form {
+    &__body {    
+        display: flex;
+        flex-direction: column;
+    
+    }
+     
+    &__group {
+        width: 100%;
+        &:not(:last-child)  {
+             margin-bottom: 1rem;   
+        }
+    }
+
+    &__label {
+        display: block;
+        font-size: 1.3rem;
+        font-family: inherit;
+        padding-left: 1.5rem;
+        color: $color-grey-dark-2;
+        transition: all .2s ease-out;
+    }
+
+    &__input,
+    &__textarea  {
+        display: block;
+        font-size: 1.5rem;
+        font-family: inherit;  
+        width: 100%;
+        padding: 1rem 1.5rem;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 1px solid $color-grey-dark-2;        
+        transition: all .2s ease-out;
+        background-color: transparent;
+        
+        &::placeholder { 
+            color: $color-black-1;
+        }
+       
+        &:focus {
+            border-bottom: 1px solid $color-yellow-1;
+            outline: none;
+        }     
+    }
+    &__textarea {
+        height: 10rem;
+        resize: none;
+    }
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-2rem);
+    }
+    &__textarea:placeholder-shown + &__label{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-2rem);
+    }
+}
+
+.btn {
+    outline: none;
+    align-self: flex-end;
+    display: inline-block;
+    width: 40%;
+    height: 5rem;
+    padding: .8rem 1.5rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    background-color: $color-yellow-1;
+    font-family: inherit;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        color: $color-black-1;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .6);
+        transform: translateY(-2px) scale(.98);
+    }
+}
+.back-foto {
+    width: 30%;
+    height: 30%;
+}
