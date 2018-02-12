@@ -15,12 +15,18 @@
 .text-box{
     flex: 1 0 50%;
     background-color: $color-white; 
+    &__about {
+        background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/about1.png);
+        background-size: auto 108%;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
  
     &__contact {
-        background-image: linear-gradient(rgba(#fff, .95), rgba(#fff, .95)), url(../img/mail.png);
+        background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/envelop.png);
         background-size: auto 100%;
         background-repeat: no-repeat;
-        background-position: bottom;
+        background-position: right;
     }
     &__experience {
         background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/Artboard13.png);
