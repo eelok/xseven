@@ -16,20 +16,21 @@
     flex: 1 0 50%;
     background-color: $color-white; 
     &__about {
-        background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/about1.png);
+        background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/bg-about.png);
         background-size: auto 108%;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    &__experience {
+        background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/bg-experience.png);
+        background-size: auto 100%;
         background-repeat: no-repeat;
         background-position: right;
     }
  
     &__contact {
-        background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/envelop.png);
-        background-size: auto 100%;
-        background-repeat: no-repeat;
-        background-position: right;
-    }
-    &__experience {
-        background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/Artboard13.png);
+        background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/bg-contact.png);
         background-size: auto 100%;
         background-repeat: no-repeat;
         background-position: right;
@@ -48,11 +49,9 @@
         width: 18rem;
         height: 18rem; 
         transition: all .3s ease-in-out;
-        // filter: grayscale(100%);
 
         &:hover {
             transform: scale(1.09);
-            // filter: grayscale(0);   
         }
     } 
 }
