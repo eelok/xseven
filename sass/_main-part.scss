@@ -30,9 +30,9 @@
     }
     &__experience {
         background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/Artboard13.png);
-        background-size: cover;
+        background-size: auto 100%;
         background-repeat: no-repeat;
-        background-position: top;
+        background-position: right;
     }
 }
    
