@@ -21,7 +21,7 @@
 
         &::before {
             content: "";
-            background-color: $color-yellow-1;
+            background-color: rgba($color-yellow-1, .85);
             width: 3px;
             height: 100%;
             position: absolute;
@@ -36,7 +36,7 @@
         }
 
         &--active {
-            background-color: $color-yellow-1;
+            background-color: rgba($color-yellow-1, .85);
         }
         
     }
