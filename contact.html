@@ -10,7 +10,7 @@
     <div class="container">
         <header class="header u-margin-bottom-medium">
             <div class="header__box-logo">
-                <img src="img/name.svg" class="header__logo-name">  
+                <img src="img/name.svg" class="header__logo-name">
             </div>
         </header>
         <div class=main-part>
@@ -32,30 +32,30 @@
                         </a>
                     </li>
                 </ul>
-            </nav>  
+            </nav>
             <div class="text-box text-box__contact u-margin-left-medium">
-                <h1 class="heading-primary heading-primary__contact u-margin-bottom-small-1">Get in touch:</h1>            
-                <form action="#" class="form__body">     
-                    <div class="form__group"> 
-                        <input class="form__input" type="text" placeholder="Name" id="name">
-                        <label class="form__label form__label--1" for="name">Name</label>                           
-                    </div>
-                    <div class="form__group">  
-                        <input class="form__input" type="email" placeholder="E-mail" id="email" required>
-                        <label class="form__label form__label--2" for="email">E-mail</label>  
+                <h1 class="heading-primary heading-primary__contact u-margin-bottom-small-1">Get in touch:</h1>
+                <form action="/contact" class="form__body" method="POST">
+                    <div class="form__group">
+                        <input class="form__input" type="text" placeholder="Name" id="name" name="Name">
+                        <label class="form__label form__label--1" for="name">Name</label>
                     </div>
                     <div class="form__group">
-                        <textarea class="form__textarea" id="msg" placeholder="Type your message here...."></textarea> 
-                        <label class="form__label form__label--3" for="msg">Message</label>                    
+                        <input class="form__input" type="email" placeholder="E-mail" id="email" required name="email">
+                        <label class="form__label form__label--2" for="email">E-mail</label>
+                    </div>
+                    <div class="form__group">
+                        <textarea class="form__textarea" id="msg" placeholder="Type your message here...." name="message"></textarea>
+                        <label class="form__label form__label--3" for="msg">Message</label>
                     </div>
                         <button type="submit" class="btn">Send</button>
                 </form>
-            </div>      
-            <div class="gallery">     
+            </div>
+            <div class="gallery">
                 <img src="img/foto-1.jpg" alt="gilr in gelb" class="gallery__img">
-                <img src="img/foto-2.jpg" alt="gilr" class="gallery__img">                        
-            </div>  
+                <img src="img/foto-2.jpg" alt="gilr" class="gallery__img">
+            </div>
         </div>
-    </div>  
+    </div>
 </body>
 </html>
