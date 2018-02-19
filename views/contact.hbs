@@ -1,39 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet"  href="assets/css/style.css" />
-    <title>MP</title>
-</head>
-<body>
-    <div class="container">
-        {{> header}}  
-        <div class=main-part>
-            {{> nav}}               
-            <div class="text-box text-box__contact u-margin-left-medium">
-                <h1 class="heading-primary heading-primary__contact u-margin-bottom-small-1">Get in touch:</h1>
-                <form action="/contact" class="form__body" method="POST">
-                    <div class="form__group">
-                        <input class="form__input" type="text" placeholder="Name" id="name" name="Name">
-                        <label class="form__label form__label--1" for="name">Name</label>
-                    </div>
-                    <div class="form__group">
-                        <input class="form__input" type="email" placeholder="E-mail" id="email" required name="email">
-                        <label class="form__label form__label--2" for="email">E-mail</label>
-                    </div>
-                    <div class="form__group">
-                        <textarea class="form__textarea" id="msg" placeholder="Type your message here...." name="message"></textarea>
-                        <label class="form__label form__label--3" for="msg">Message</label>
-                    </div>
-                        <button type="submit" class="btn">Send</button>
-                </form>
+              
+{{#> layout }}
+    {{#*inline "content"}}    
+        <div class="text-box text-box__contact u-margin-left-medium">
+        <h1 class="heading-primary heading-primary__contact u-margin-bottom-small-1">Get in touch:</h1>
+        <form action="/contact" class="form__body" method="POST">
+            <div class="form__group">
+                <input class="form__input" type="text" placeholder="Name" id="name" name="Name">
+                <label class="form__label form__label--1" for="name">Name</label>
             </div>
-            <div class="gallery">
-                <img src="assets/img/foto-1.jpg" alt="gilr in gelb" class="gallery__img">
-                <img src="assets/img/foto-2.jpg" alt="gilr" class="gallery__img">
+            <div class="form__group">
+                <input class="form__input" type="email" placeholder="E-mail" id="email" required name="email">
+                <label class="form__label form__label--2" for="email">E-mail</label>
             </div>
-        </div>
+            <div class="form__group">
+                <textarea class="form__textarea" id="msg" placeholder="Type your message here...." name="message"></textarea>
+                <label class="form__label form__label--3" for="msg">Message</label>
+            </div>
+                <button type="submit" class="btn">Send</button>
+        </form>
     </div>
-</body>
-</html>
+    {{/inline}}
+{{/layout}}
