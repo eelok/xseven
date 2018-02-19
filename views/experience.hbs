@@ -3,20 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet"  href="css/style.css"/>
+    <link rel="stylesheet"  href="assets/css/style.css"/>
     <title>MP</title>
 </head>
 <body>
     <div class="container">
-        <% include partials/header.ejs %>
-        <header class="header u-margin-bottom-medium ">
-            <div class="header__box-logo">
-                <img src="img/name.svg" class="header__logo-name">
-            </div>
-        </header>
-
+        {{> header}}
         <div class=main-part>
-          <% include partials/nav.ejs %>
+          {{> nav}}
             <div class="text-box text-box__experience u-margin-left-medium">
                 <h1 class="heading-primary heading-primary__experience u-margin-bottom-small">Experience:</h1>
                 <div class="experience">
@@ -47,8 +41,8 @@
                 </div>
             </div>
             <div class="gallery gallery">
-                <img src="img/foto-1.jpg" alt="gilr in gelb" class="gallery__img">
-                <img src="img/foto-2.jpg" alt="gilr" class="gallery__img">
+                <img src="assets/img/foto-1.jpg" alt="gilr in gelb" class="gallery__img">
+                <img src="assets/img/foto-2.jpg" alt="gilr" class="gallery__img">
             </div>
         </div>
     </div>

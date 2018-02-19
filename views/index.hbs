@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet"  href="css/style.css" />
+    <link rel="stylesheet"  href="assets/css/style.css" />
     <title>MP</title>
 </head>
 <body>
     <div class="container">
-        <% include partials/header.ejs %>
+        {{> header}}
         <div class=main-part>
-            <% include partials/nav.ejs %>
+            {{> nav}}
             <div class="text-box text-box__about u-margin-left-medium">
                 <h1 class="heading-primary heading-primary__about u-margin-bottom-medium">About:</h1>
                 <p class="paragraph">
@@ -27,8 +27,8 @@
                 </p>
             </div>      
             <div class="gallery">     
-                <img src="img/foto-1.jpg" alt="girl in gelb" class="gallery__img">
-                <img src="img/foto-2.jpg" alt="girl" class="gallery__img">                        
+                <img src="assets/img/foto-1.jpg" alt="girl in gelb" class="gallery__img">
+                <img src="assets/img/foto-2.jpg" alt="girl" class="gallery__img">                        
             </div>  
         </div>
     </div>  

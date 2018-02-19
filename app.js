@@ -1,28 +1,28 @@
 var express = require('express');
+var handlebars = require('express-handlebars');
 var  app = express();
 var port = 2727;
+app.engine('hbs', handlebars({   
+  extname: '.hbs',
+  partialsDir  : [    
+    __dirname + '/views/partials',
+  ]
+})); 
 
-app.set('view engine', 'ejs');
-app.use('/css', express.static('css'));
-app.listen(port);
+app.set('view engine', 'hbs');
+app.use('/assets', express.static('assets'));
+app.listen(port, function() {
+  console.log("http://localhost:" + port);
+});
 
-
-app.get('/', function(req, res){
-  // res.sendFile(__dirname + '/index.html');
+app.get('/', function(req, res) {  
   res.render('index');
 });
 
-app.get('/contact.html', function(req, res){
-  // res.sendFile(__dirname + '/contact.html');
+app.get('/contact.html', function(req, res){  
   res.render('contact');
 });
 
-app.get('/experience.html', function(req, res){
-  // res.sendFile(__dirname + '/experience.html')
+app.get('/experience.html', function(req, res){  
   res.render('experience');
-})
-
-app.get('/profile/:name', function(req,res){
-  var data = {age: 29, job: 'ninja', hobbies: ['eating', 'fighting', 'fishing']};
-  res.render('profile', {person: req.params.name, data: data});
 });
