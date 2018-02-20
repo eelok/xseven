@@ -5,21 +5,13 @@
     font-size: 2.8rem;
     font-weight: 300;
     text-transform: uppercase;
+    text-align: left;
     letter-spacing: 1px;
     color: $color-black-1;
     text-shadow: 0 2px 2px rgba(0, 0, 0, .12); 
     
-    &__about {
-        text-align: left;
-        margin-left: 7rem; 
-    }
-    
     &__experience {
         text-align: center;
-    }
-
-    &__contact {
-        text-align: left;
     }
 }
 
