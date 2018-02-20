@@ -1,50 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet"  href="assets/css/style.css"/>
-    <title>MP</title>
-</head>
-<body>
-    <div class="container">
-        {{> header}}
-        <div class=main-part>
-          {{> nav}}
-            <div class="text-box text-box__experience u-margin-left-medium">
-                <h1 class="heading-primary heading-primary__experience u-margin-bottom-small">Experience:</h1>
-                <div class="experience">
-                    <div class="progress-bar progress-bar__1">
-                        <h2 class="name">Illustrator</h2>
-                    </div>
-                    <div class="progress-bar progress-bar__2">
-                        <h2 class="name">Photoshop</h2>
-                    </div>
-                    <div class="progress-bar progress-bar__3">
-                        <h2 class="name">JS</h2>
-                    </div>
-                    <div class="progress-bar progress-bar__4">
-                        <h2 class="name">npm</h2>
-                    </div>
-                    <div class="progress-bar progress-bar__5">
-                        <h2 class="name">Git</h2>
-                    </div>
-                    <div class="progress-bar progress-bar__6">
-                        <h2 class="name">Sass/Scss</h2>
-                    </div>
-                    <div class="progress-bar progress-bar__7">
-                        <h2 class="name">Css</h2>
-                    </div>
-                    <div class="progress-bar progress-bar__8">
-                        <h2 class="name">Html</h2>
-                    </div>
+{{#> layout }}
+    {{#*inline "content"}} 
+        <div class="text-box text-box__experience u-margin-left-medium">
+            <h1 class="heading-primary heading-primary__experience u-margin-bottom-small">Experience:</h1>
+            <div class="experience">
+                <div class="progress-bar progress-bar__1">
+                    <h2 class="name">Illustrator</h2>
+                </div>
+                <div class="progress-bar progress-bar__2">
+                    <h2 class="name">Photoshop</h2>
+                </div>
+                <div class="progress-bar progress-bar__3">
+                    <h2 class="name">JS</h2>
+                </div>
+                <div class="progress-bar progress-bar__4">
+                    <h2 class="name">Node.js</h2>
+                </div>
+                <div class="progress-bar progress-bar__5">
+                    <h2 class="name">Git</h2>
+                </div>
+                <div class="progress-bar progress-bar__6">
+                    <h2 class="name">Sass/Scss</h2>
+                </div>
+                <div class="progress-bar progress-bar__7">
+                    <h2 class="name">Css</h2>
+                </div>
+                <div class="progress-bar progress-bar__8">
+                    <h2 class="name">Html</h2>
                 </div>
             </div>
-            <div class="gallery gallery">
-                <img src="assets/img/foto-1.jpg" alt="gilr in gelb" class="gallery__img">
-                <img src="assets/img/foto-2.jpg" alt="gilr" class="gallery__img">
-            </div>
         </div>
-    </div>
-</body>
-</html>
+    {{/inline}}
+{{/layout}}
