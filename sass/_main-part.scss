@@ -17,16 +17,16 @@
     background-color: $color-white; 
     &__about {
         background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/bg-about.png);
-        background-size: auto 108%;
+        background-size: auto 104%;
         background-repeat: no-repeat;
         background-position: right;
     }
 
     &__experience {
         background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/bg-experience.png);
-        background-size: auto 100%;
+        background-size: 100% auto;
         background-repeat: no-repeat;
-        background-position: right;
+        background-position: top;
     }
  
     &__contact {

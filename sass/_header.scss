@@ -2,19 +2,15 @@
 @import "utilities";
 
 .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 10rem;
     background-color: rgba($color-yellow-1, .85);
- 
-    &__box-logo {
-        position: relative;
-        transform: all;
+    
+    &__logo {
+        height: auto;
+        width: 65%;
     }
-
-    &__logo-name{
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translateY(-13px) translateX(5px) scale(.6);
-    } 
 }
