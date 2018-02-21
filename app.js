@@ -1,6 +1,10 @@
 var express = require('express');
 var handlebars = require('express-handlebars');
+var bodyParser = require('body-parser');
+
 var  app = express();
+var urlencodedParser = bodyParser.urlencoded({ extended: false });
+
 var port = 2727;
 app.engine('hbs', handlebars({   
   extname: '.hbs',
@@ -19,10 +23,15 @@ app.get('/', function(req, res) {
   res.render('index');
 });
 
-app.get('/contact.html', function(req, res){  
+app.get('/contact', function(req, res){  
   res.render('contact');
 });
 
-app.get('/experience.html', function(req, res){  
+app.post('/contact', urlencodedParser, function(req, res){  
+  console.log(req.body);
+  res.render('contact-reply', {data: req.body});
+});
+
+app.get('/experience', function(req, res){  
   res.render('experience');
 });

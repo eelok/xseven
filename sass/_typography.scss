@@ -23,19 +23,20 @@
     text-align: justify;
 }
 
-.contact-text{
-    & > * {
-        margin: 5rem;
-    }
-    font-size: 2.8rem;
-    font-weight: 100;
-    text-align: center;
-}
-
 h2{
     font-size: 1.5rem;
     font-weight: 100;
     text-transform: uppercase;   
     letter-spacing: .5px;
     color: #fff;
+}
+
+.reply {
+    &__greeting{
+        font-size: 2.5rem;
+    }
+    &__body,
+    &__signature {
+        font-size: 2rem;
+    }
 }
