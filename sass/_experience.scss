@@ -3,7 +3,6 @@
     flex-direction: column;
 }
 .progress-bar {
-    position: relative;
     &:not(:last-child ) {
         margin-bottom: 1.5rem;
     }
@@ -16,23 +15,4 @@
         height: 100%;
         background-color: rgba($color-blue-7, .5);
     }
-
-    &__1,
-    &__2 {
-       width: 35%;
-    }
-    &__3 {
-        width: 15%;
-    }
-    &__4 {
-        width: 30%;
-    }
-    &__5 {
-        width: 45%;
-    }
-    &__6,
-    &__7,
-    &__8 {
-        width: 75%;
-    }  
 }
