@@ -1,16 +1,28 @@
 <nav class="menu-box">
     <ul class="menu-box__list">
-        <li class="menu-box__item menu-box__item--active">
+        {{#if index}}
+            <li class="menu-box__item menu-box__item--active">
+        {{else}}
+            <li class="menu-box__item">
+        {{/if}}
             <a href="/"class="menu-box__link">
                 About
             </a>
         </li>
-        <li class="menu-box__item">
+        {{#if experience}}
+            <li class="menu-box__item menu-box__item--active">
+        {{else}}
+            <li class="menu-box__item">
+        {{/if}}
             <a href="experience"class="menu-box__link">
                 Experience
             </a>
         </li>
-        <li class="menu-box__item">
+        {{#if contact}}
+            <li class="menu-box__item menu-box__item--active">
+        {{else}}
+            <li class="menu-box__item">
+        {{/if}}
             <a href="contact"class="menu-box__link">
                 Get in touch
             </a>
