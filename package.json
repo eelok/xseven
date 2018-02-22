@@ -26,6 +26,7 @@
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
     "nodemailer": "^4.4.2",
+    "nodemailer-smtp-transport": "^2.7.4",
     "nodemon": "^1.15.1"
   }
 }
