@@ -36,6 +36,10 @@
         background-position: right;
     }
     &__reply{
+        background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/reply.png);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: right;
         padding: 5rem 0;
         display: flex;
         flex-direction: column;
