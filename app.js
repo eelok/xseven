@@ -22,15 +22,15 @@ app.listen(port, function() {
 });
 
 app.get('/', function(req, res) {  
-  res.render('index');
+  res.render('index', {index: true});
 });
 
 app.get('/experience', function(req, res){  
-  res.render('experience');
+  res.render('experience', {experience: true});
 });
 
 app.get('/contact', function(req, res){  
-  res.render('contact');
+  res.render('contact', {contact: true});
 });
 
 app.post('/contact', urlencodedParser, function(req, res){  
