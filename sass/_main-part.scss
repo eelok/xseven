@@ -1,5 +1,4 @@
 @import "variables";
-@import "utilities";
  
 .container{
     height: 100vh;
@@ -40,12 +39,14 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+    
     &__reply{
+        flex: 1 0 70%;
+        padding: 5rem 4rem;
         background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/reply.png);
         background-size: auto 100%;
         background-repeat: no-repeat;
         background-position: right;
-        padding: 5rem 0;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
