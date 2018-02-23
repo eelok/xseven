@@ -13,28 +13,32 @@
 }
 
 .text-box{
-    flex: 1 0 50%;
-    background-color: $color-white; 
+    
     &__about {
+        flex: 1 0 45%;
+        padding: 0 2rem 0 2rem;
         background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/bg-about.png);
         background-size: auto 100%;
         background-repeat: no-repeat;
-        background-position: right;
+        background-position: bottom;
     }
 
     &__experience {
+        flex: 1 0 70%;
+        padding-left: 2rem;
         background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/bg-experience.png);
-        background-size: 100% auto;
+        background-size: auto 100%;
         background-repeat: no-repeat;
         background-position: top;
     }
  
     &__contact {
+        flex: 1 0 70%;
+        padding-left: 2rem;
         background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/bg-contact.png);
-        background-size: 100% auto;
+        background-size: auto 100%;
         background-repeat: no-repeat;
-        background-position: right;
-        margin-left: 4rem;
+        background-position: center;
     }
     &__reply{
         background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/reply.png);
@@ -49,21 +53,14 @@
 }
    
 .gallery {
-    flex: 0 0 23%;
-    background-color: $color-white;  
+    flex: 0 0 27%;
     display: flex;
-    flex-direction: column;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: flex-end;
    
-    &__img {
-        width: 18rem;
-        height: 18rem; 
-        transition: all .3s ease-in-out;
-
-        &:hover {
-            transform: scale(1.09);
-        }
+    img {
+        width: auto;
+        height: 37rem; 
     } 
 }
 

@@ -22,7 +22,7 @@ app.listen(port, function() {
 });
 
 app.get('/', function(req, res) {  
-  res.render('index', {index: true});
+  res.render('about', {about: true});
 });
 
 app.get('/experience', function(req, res){  
