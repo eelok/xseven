@@ -17,7 +17,10 @@
     &__item {
         &:not(:last-child){
             margin-bottom: 2rem;
-        }      
+        }     
+        &--active {
+            background-color: rgba($color-yellow-1, .85);
+        }
     }
 
     &__link:link,
@@ -47,10 +50,5 @@
             transform: scaleY(1);
             width: 100%; 
         }
-
-        &--active {
-            background-color: rgba($color-yellow-1, .85);
-        }
-
-    }
+    } 
 }
