@@ -1,12 +1,9 @@
 @import "variables";
-@import "utilities";
 
-.form {
-    &__body {    
-        display: flex;
-        flex-direction: column;
-    }
-     
+.form {  
+    display: flex;
+    flex-direction: column;
+    
     &__group {
         width: 100%;
         &:not(:last-child)  {
@@ -44,6 +41,7 @@
         }     
     }
     &__textarea {
+        margin-top: 1.5rem;
         height: 10rem;
         resize: none;
     }
@@ -60,7 +58,7 @@
     outline: none;
     align-self: flex-end;
     display: inline-block;
-    width: 40%;
+    width: 30%;
     height: 5rem;
     padding: .8rem 1.5rem;
     font-size: 2rem;
@@ -80,7 +78,4 @@
         transform: translateY(-2px) scale(.98);
     }
 }
-.back-foto {
-    width: 30%;
-    height: 30%;
-}
+

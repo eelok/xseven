@@ -1,0 +1,31 @@
+<nav class="menu-box">
+    <ul class="menu-box__list">
+        {{#if about}}
+            <li class="menu-box__item menu-box__item--active">
+        {{else}}
+            <li class="menu-box__item">
+        {{/if}}
+            <a href="/"class="menu-box__link">
+                About
+            </a>
+        </li>
+        {{#if experience}}
+            <li class="menu-box__item menu-box__item--active">
+        {{else}}
+            <li class="menu-box__item">
+        {{/if}}
+            <a href="experience"class="menu-box__link">
+                Experience
+            </a>
+        </li>
+        {{#if contact}}
+            <li class="menu-box__item menu-box__item--active">
+        {{else}}
+            <li class="menu-box__item">
+        {{/if}}
+            <a href="contact"class="menu-box__link">
+                Get in touch
+            </a>
+        </li>
+    </ul>
+</nav>
