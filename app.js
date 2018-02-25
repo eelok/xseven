@@ -6,7 +6,7 @@ var smtpTransport = require('nodemailer-smtp-transport');
 
 var  app = express();
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
-var port = 2727;
+var port = process.env.PORT || 8080;
 
 app.engine('hbs', handlebars({   
   extname: '.hbs',
