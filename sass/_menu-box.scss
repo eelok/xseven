@@ -7,17 +7,37 @@
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-bottom: 1rem;
+
+    @include atSmall{
+        padding-top: 0;
+        font-size: 1.5rem;
+        border: none;
+    }
   
     &__list {
         display: block;
         list-style: none;
-        text-align: center;        
+        text-align: center;   
+
+        @include atSmall {
+            display: flex;
+            justify-content: space-between;
+        }     
     }
 
     &__item {
         &:not(:last-child){
             margin-bottom: 2rem;
-        }     
+
+            @include atSmall {
+                margin-bottom: 0; 
+            }
+        } 
+        
+        @include atSmall {
+            flex: 1;
+        }
         &--active {
             background-color: rgba($color-yellow-1, .85);
         }
@@ -32,6 +52,10 @@
         padding: 2rem;
         position: relative;    
         z-index: 10;  
+
+        @include atSmall{
+            padding: 1rem;
+        }
 
         &::before {
             content: "";

@@ -8,9 +8,13 @@
     height: 10rem;
     background-color: rgba($color-yellow-1, .85);
     margin-bottom: 4rem;
-    
+
+    @include atSmall {
+        height: 5rem;
+        margin-bottom: 0;
+    }
     &__logo {
-        height: auto;
-        width: 65%;
+        height: 65%;
+        width: auto;
     }
 }

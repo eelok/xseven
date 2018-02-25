@@ -1,14 +1,23 @@
 @import "variables";
+@import "mixins";
  
 .container{
     height: 100vh;
     max-width: 100rem;
     margin: 6rem auto 0;
     background-color: $color-white; 
+
+    @include atSmall {
+        margin: 0;
+    }
 }
 
 .main-part{
     display: flex;
+
+    @include atSmall {
+        flex-direction: column;
+    }
 }
 
 .text-box{
@@ -20,28 +29,42 @@
         background-size: auto 100%;
         background-repeat: no-repeat;
         background-position: bottom;
+
+        @include atSmall{
+            background-image: none;
+        }
     }
 
     &__experience {
-        flex: 1 0 70%;
+        flex: 1;
         padding-left: 2rem;
         background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/bg-experience.png);
         background-size: auto 100%;
         background-repeat: no-repeat;
         background-position: top;
+
+        @include atSmall{
+            background-image: none;
+            padding-right: 2rem;
+        }
     }
  
     &__contact {
-        flex: 1 0 70%;
+        flex: 1;
         padding-left: 2rem;
         background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/bg-contact.png);
         background-size: auto 100%;
         background-repeat: no-repeat;
         background-position: center;
+        
+        @include atSmall{
+            background-image: none;
+            padding-right: 2rem;
+        }
     }
     
     &__reply{
-        flex: 1 0 70%;
+        flex: 1;
         padding: 5rem 4rem;
         background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/reply.png);
         background-size: auto 100%;
