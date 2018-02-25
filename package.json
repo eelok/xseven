@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "9.6.1",
+    "npm": "5.6.0"
+  },
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "devserver": "live-server",
+    "devserver": "nodemon --ignore dist -e scss --exec 'npm run build:css && npm run serve'",
+    "prestart": "npm run build:css",
     "serve": "node app.js",
-    "start": "nodemon --ignore dist -e scss --exec 'npm run build:css && npm run serve'",
+    "start": "npm run serve",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css assets/css/style.css --output-style compressed",
