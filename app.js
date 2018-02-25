@@ -52,7 +52,7 @@ function createTransport() {
     maxConnections: 5,
     maxMessages: 10
   };
-  console.log(process.env.XSEVEN_EMAIL);
+  console.log('email', process.env.XSEVEN_EMAIL);
   return nodemailer.createTransport(smtpTransport(envelope));
 }
 function sendMail(reqBody) {
