@@ -25,6 +25,17 @@
 .text-box {
     
     &__about {
+        img {
+            width: 100%;
+            margin: 5px 0 10px 0;
+            @include min-width(440px) {
+                float: right;
+                width: auto;
+                height: 300px;
+                margin-left: 20px;
+            }
+        }
+        
         flex: 1 0 45%;
         padding: 0 2rem 0 2rem;        
         background-size: auto 100%;
