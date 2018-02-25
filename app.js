@@ -53,6 +53,7 @@ function createTransport() {
     maxMessages: 10
   };
   console.log('email', process.env.XSEVEN_EMAIL);
+  console.log('password', process.env.XSEVEN_PASSWORD);
   return nodemailer.createTransport(smtpTransport(envelope));
 }
 function sendMail(reqBody) {
