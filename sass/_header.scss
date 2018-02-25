@@ -8,8 +8,6 @@
     height: 5rem;    
     background-color: rgba($color-yellow-1, .85);
     margin-bottom: 0;
-    
-
     @include min-width($screen-desktop) {
         height: 10rem;
         margin-bottom: 4rem;

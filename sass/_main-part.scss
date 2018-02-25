@@ -22,8 +22,7 @@
     }
 }
 
-.text-box {
-    
+.text-box {    
     &__about {
         img {
             width: 100%;
@@ -34,8 +33,7 @@
                 height: 300px;
                 margin-left: 20px;
             }
-        }
-        
+        }        
         flex: 1 0 45%;
         padding: 0 2rem 0 2rem;        
         background-size: auto 100%;
@@ -50,12 +48,10 @@
     &__experience {
         flex: 1;
         padding-left: 2rem;
-        padding-right: 2rem;
-        
+        padding-right: 2rem;        
         background-size: auto 100%;
         background-repeat: no-repeat;
         background-position: top;
-
         @include min-width($screen-desktop) {         
             background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/bg-experience.png);
         }
@@ -67,8 +63,7 @@
         background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/bg-contact.png);
         background-size: auto 100%;
         background-repeat: no-repeat;
-        background-position: center;
-        
+        background-position: center;        
         @include min-width($screen-desktop) {
             background-image: none;
             padding-right: 2rem;

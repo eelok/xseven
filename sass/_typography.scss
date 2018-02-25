@@ -1,23 +1,18 @@
 @import "variables";
 
 .heading-primary{
-    font-size: 1.8rem;
-    
+    font-size: 1.8rem;    
     font-weight: 300;
     text-transform: uppercase;
     text-align: left;
     letter-spacing: 1px;
     color: $color-black-1;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, .12); 
-
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .12);
     @include min-width($screen-desktop) {
         font-size: 2.8rem;
     }
-
     &__about {
-        margin-bottom: 1rem;
-        
-
+        margin-bottom: 1rem;    
         @include min-width($screen-desktop) {
             margin-bottom: 1.5rem;    
         }
