@@ -1,10 +1,10 @@
 @import "variables";
 
-.menu-box {    
+.menu-box {
     border: none;
     flex: 0 0 21%;   
     padding-top: 0;
-    font-size: 1.1rem;    
+    font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 1rem;
@@ -47,7 +47,7 @@
         display: block;
         width: 100%;
         text-decoration: none;
-        color: $color-black-1;         
+        color: $color-black-1;
         padding: 1rem;
         position: relative;    
         z-index: 10;  
