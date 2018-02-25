@@ -1,8 +1,7 @@
 
-@mixin atSmall {
-    @media screen and (max-width: 530px) {
-      @content;
-    }
+@mixin min-width($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
 }
-
   

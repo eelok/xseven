@@ -1,42 +1,44 @@
 @import "variables";
 
-.menu-box {  
-    border: 1px solid $color-grey-light-2;
+.menu-box {    
+    border: none;
     flex: 0 0 21%;   
-    padding-top: 6rem;
-    font-size: 2rem;
+    padding-top: 0;
+    font-size: 1.1rem;
+    
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 1rem;
 
-    @include atSmall{
-        padding-top: 0;
-        font-size: 1.5rem;
-        border: none;
+    @include min-width($screen-desktop) {
+        padding-top: 6rem;
+        font-size: 2rem;
+        border: 1px solid $color-grey-light-2;          
     }
   
     &__list {
-        display: block;
+        display: flex;
+        justify-content: space-between;
         list-style: none;
         text-align: center;   
 
-        @include atSmall {
-            display: flex;
-            justify-content: space-between;
+        @include min-width($screen-desktop) {
+            display: block;
+            justify-content: unset;              
         }     
     }
 
     &__item {
+        flex: 1;
         &:not(:last-child){
-            margin-bottom: 2rem;
+            margin-bottom: 0;
 
-            @include atSmall {
-                margin-bottom: 0; 
+            @include min-width($screen-desktop) {
+                margin-bottom: 2rem;    
             }
-        } 
-        
-        @include atSmall {
-            flex: 1;
+        }         
+        @include min-width($screen-desktop) {
+            flex: unset;
         }
         &--active {
             background-color: rgba($color-yellow-1, .85);
@@ -48,13 +50,13 @@
         display: block;
         width: 100%;
         text-decoration: none;
-        color: $color-black-1; 
-        padding: 2rem;
+        color: $color-black-1;         
+        padding: 1rem;
         position: relative;    
         z-index: 10;  
 
-        @include atSmall{
-            padding: 1rem;
+        @include min-width($screen-desktop) {
+            padding: 2rem;    
         }
 
         &::before {

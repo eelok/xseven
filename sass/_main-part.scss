@@ -1,51 +1,52 @@
 @import "variables";
 @import "mixins";
  
-.container{
-    height: 100vh;
-    max-width: 100rem;
-    margin: 6rem auto 0;
-    background-color: $color-white; 
-
-    @include atSmall {
-        margin: 0;
+.container {
+    background-color: $color-white;
+    @include min-width($screen-tablet) {
+        margin: 0 auto;
+        width: $screen-tablet;
     }
+
+    @include min-width($screen-desktop) {
+        width: $screen-desktop;        
+    }        
 }
 
-.main-part{
+.main-part {
     display: flex;
+    flex-direction: column;
 
-    @include atSmall {
-        flex-direction: column;
+    @include min-width($screen-desktop) {
+        flex-direction: row;
     }
 }
 
-.text-box{
+.text-box {
     
     &__about {
         flex: 1 0 45%;
-        padding: 0 2rem 0 2rem;
-        background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/bg-about.png);
+        padding: 0 2rem 0 2rem;        
         background-size: auto 100%;
         background-repeat: no-repeat;
         background-position: bottom;
 
-        @include atSmall{
-            background-image: none;
+        @include min-width($screen-desktop) {
+            background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/bg-about.png);
         }
     }
 
     &__experience {
         flex: 1;
         padding-left: 2rem;
-        background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/bg-experience.png);
+        padding-right: 2rem;
+        
         background-size: auto 100%;
         background-repeat: no-repeat;
         background-position: top;
 
-        @include atSmall{
-            background-image: none;
-            padding-right: 2rem;
+        @include min-width($screen-desktop) {         
+            background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/bg-experience.png);
         }
     }
  
@@ -57,13 +58,13 @@
         background-repeat: no-repeat;
         background-position: center;
         
-        @include atSmall{
+        @include min-width($screen-desktop) {
             background-image: none;
             padding-right: 2rem;
         }
     }
     
-    &__reply{
+    &__reply {
         flex: 1;
         padding: 5rem 4rem;
         background-image: linear-gradient(rgba(#fff, .85), rgba(#fff, .85)), url(../img/reply.png);
