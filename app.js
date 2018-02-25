@@ -2,7 +2,6 @@ var express = require('express');
 var handlebars = require('express-handlebars');
 var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
-var smtpTransport = require('nodemailer-smtp-transport');
 
 var  app = express();
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
@@ -39,28 +38,20 @@ app.post('/contact', urlencodedParser, function(req, res){
   res.render('contact-reply', {data: req.body});  
 });
 
-function createTransport() {  
-  var envelope = {
-    debug: true,
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: true,
+function createTransport() {    
+  return nodemailer.createTransport({
+    service: "Mail.Ru",
     auth: {
-      user: process.env.XSEVEN_EMAIL,
-      pass: process.env.XSEVEN_PASSWORD
-    },
-    maxConnections: 5,
-    maxMessages: 10
-  };
-  console.log('email', process.env.XSEVEN_EMAIL);
-  console.log('password', process.env.XSEVEN_PASSWORD);
-  return nodemailer.createTransport(smtpTransport(envelope));
+        user: process.env.XSEVEN_EMAIL,
+        pass: process.env.XSEVEN_PASSWORD
+    }
+  });  
 }
 function sendMail(reqBody) {
   var transporter = createTransport();
 
   const mailOptions = {
-    from: reqBody.email,
+    from: process.env.XSEVEN_EMAIL,
     to: process.env.XSEVEN_EMAIL,
     subject: `Message from: ${reqBody.name}, ${reqBody.email}`,
     html: reqBody.message
